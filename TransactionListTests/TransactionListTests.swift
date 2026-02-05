@@ -1,0 +1,17 @@
+//
+//  TransactionListTests.swift
+//  TransactionListTests
+//
+//  Created by Maysam Shahsavari on 2026-02-05.
+//
+
+import Testing
+@testable import TransactionList
+
+struct TransactionListTests {
+
+    @Test func example() async throws {
+        // Write your test here and use APIs like `#expect(...)` to check expected conditions.
+    }
+
+}
