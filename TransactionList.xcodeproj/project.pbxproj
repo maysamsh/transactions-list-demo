@@ -29,9 +29,22 @@
 		7D3D5CF62F353D0D003E7ED3 /* TransactionListUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TransactionListUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		7D3D5D472F35411C003E7ED3 /* Exceptions for "TransactionList" folder in "TransactionListTests" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				"Supporting Files/transaction-list.json",
+			);
+			target = 7D3D5CEB2F353D0D003E7ED3 /* TransactionListTests */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		7D3D5CE12F353D0B003E7ED3 /* TransactionList */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				7D3D5D472F35411C003E7ED3 /* Exceptions for "TransactionList" folder in "TransactionListTests" target */,
+			);
 			path = TransactionList;
 			sourceTree = "<group>";
 		};
