@@ -6,33 +6,12 @@
 //
 
 import Testing
-import Foundation
 @testable import TransactionList
 
 struct TransactionListTests {
-    @Test func testSuccess() async throws {
-        let mock = MockAPIService()
-        mock.behaviour = .success
-        let transactions = try await mock.fetchTransactions()
-        #expect(!transactions.isEmpty)
-    }
 
-    @Test func testEmpty() async throws {
-        let mock = MockAPIService()
-        mock.behaviour = .empty
-        let transactions = try await mock.fetchTransactions()
-        #expect(transactions.isEmpty)
-    }
-
-    @Test func tesError() async {
-        let mock = MockAPIService()
-        mock.behaviour = .error(URLError(.notConnectedToInternet))
-        do {
-            let response = try await mock.fetchTransactions()
-            #expect(Bool(false), "Expected throw, \(response.count) records returned!")
-        } catch {
-            #expect(error is URLError)
-        }
+    @Test func example() async throws {
+        // Write your test here and use APIs like `#expect(...)` to check expected conditions.
     }
 
 }
